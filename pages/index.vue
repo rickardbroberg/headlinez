@@ -3,13 +3,14 @@
     <div class="container container--fluid">
         <div class="layout row wrap">
           
-          <div class="flex my-5 text-left xs12">
+          <div class="flex my-2 text-left xs12">
             <h1>Headlinez din frisör i vasastan</h1> 
-            <p class="feed-subheading mt-4"><span>Färgar, slingar, klipper och tonar ditt hår till perfektion, alltid nöjd kund garanti.</span></p></div>
+            <p class="feed-subheading mt-4"><span>Färgar, slingar, klipper och tonar ditt hår till perfektion, alltid nöjd kund garanti. följ mig på instagram: @jack.sharoian</span> eller <a href="/kontakt">boka din nästa tid</a> nu</p></div>
 
           
-          <div class="flex xs12 align-center hidden-md-and-down"><hr role="separator" aria-orientation="horizontal" class="grey feed-border v-divider theme--light mt-5"></div>
-
+          <div class="flex xs12 align-center hidden-md-and-down"><hr role="separator" aria-orientation="horizontal" class="grey feed-border v-divider theme--light"></div>
+          
+          
         
           <div v-for="(product, p) in products" :key="p" class="flex zx12 sm4 lg3">
             <div class="align-items-center">
@@ -18,25 +19,26 @@
                   <div class="v-list-item__title body-1 font-weight-medium" height="18">
                     {{ product.title }}
                   </div>
-                  <div class="v-list-item__subtitle caption">
-                    {{ product.text }}
-                  </div>
                 </div>
               </div>
             </div>
             <div class="v-card v-card--flat v-sheet v-sheet--tile theme--light transparent">
-              <a href="">
+              
                 <div class="v-responsive v-image grey lighten-2 image-feed">
                   <div class="v-responsive__sizer" style="padding-bottom: 178.571%;"></div>
-                  <div class="v-image__image v-image__image--cover" 
+                  
+                  <video v-if="product.video" width="450" controls :src="product.video"></video>
+                  <div v-else class="v-image__image v-image__image--cover" 
                   :style="{ backgroundImage: `url(${product.image})`, backgroundPosition: 'center center' }"></div>
 
                   <!-- style='background-image: url("product.image"); background-position: center center;' -->
                   <div class="v-responsive__content"></div>
                 </div>  
-              </a>
+              
             </div>
           </div>
+        
+        
 
       </div>
     </div>
@@ -51,35 +53,89 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+// import myVideo from 'vue-video'
 
 Vue.use(Vuetify)
 
 export default {
   data: () => ({
+    link: '/kontakt',
     products: [
       {
-        icon: 'mdi-inbox',
-        title: 'Färgning',
-        text: 'Blakning eller färgning',
-        image: '/fargning.jpg'
-      },
-      {
-        icon: 'mdi-star',
-        title: 'Slingor',
-        text: 'Ljusa eller mörka, ombre',
-        image: '/blonde.jpg'
-      },
-      {
-        icon: 'mdi-send',
-        title: 'Toning',
-        text: 'Nyanser med liv',
-        image: '/blonde.jpg'
+        icon: 'mdi-email-open',
+        title: 'Färginspiration',
+        video: 'IMG_8938.mp4'
       },
       {
         icon: 'mdi-email-open',
-        title: 'Klippning',
-        text: 'Herr och damklippning',
+        title: 'Frisyrinsporation för män',
         image: '/klippning.jpg'
+      },
+      {
+        icon: 'mdi-inbox',
+        title: 'Frisyrinsporation för män',
+        image: '/klippning-3.jpg'
+      },
+      {
+        icon: 'mdi-inbox',
+        title: 'Inspiration för hårfäg',
+        video: 'IMG_8939.mp4'
+      },
+      {
+        icon: 'mdi-email-open',
+        title: 'Före och efter resultat',
+        image: '/before-after-1.jpg'
+      },
+      {
+        icon: 'mdi-star',
+        title: 'Färgat blont',
+        image: '/blonde.jpg'
+      },
+      {
+        icon: 'mdi-star',
+        title: 'Men hairstyle',
+        video: 'IMG_8932.mp4'
+      },
+      {
+        icon: 'mdi-email-open',
+        title: 'Färg och klippning',
+        image: '/before-after-2.jpg'
+      },
+      {
+        icon: 'mdi-inbox',
+        title: 'Fade klippning',
+        image: '/klippning-4.jpg'
+      },
+      {
+        icon: 'mdi-inbox',
+        title: 'Blondering',
+        video: 'IMG_8936.mp4'
+      },
+      {
+        icon: 'mdi-star',
+        title: 'Före klippning',
+        image: '/klipp-after-2.jpg'
+      },
+      {
+        icon: 'mdi-send',
+        title: 'Efter fade klippning',
+        image: '/klipp-after-1.jpg'
+      },
+      
+      {
+        icon: 'mdi-email-open',
+        title: 'Inspiration för färgning',
+        image: '/fargning-1.jpg'
+      },
+      {
+        icon: 'mdi-email-open',
+        title: 'Fadeklippning med bena',
+        image: '/klippning-2.jpg'
+      },
+      {
+        icon: 'mdi-send',
+        title: 'Fadeklippning med markering',
+        image: '/klippning-1.jpg'
       },
     ],
     
