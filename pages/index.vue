@@ -160,7 +160,10 @@ export default {
 
 
 @media only screen and (max-width: 768px) {
-
+  
+  .v-card{
+    vertical-align: top;
+  }
   .flex{
     float: left;
     clear: both;
