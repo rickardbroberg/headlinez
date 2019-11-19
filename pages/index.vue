@@ -24,7 +24,7 @@
             </div>
             <div class="v-card v-card--flat v-sheet v-sheet--tile theme--light transparent">
               
-                <div class="v-responsive v-image grey lighten-2 image-feed">
+                <div class="v-responsive v-image image-feed">
                   <div class="v-responsive__sizer" style="padding-bottom: 178.571%;"></div>
                   
                   <video v-if="product.video" width="100%" controls :src="product.video"></video>
@@ -159,9 +159,13 @@ export default {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
-  
+  .flex{
+    float: left;
+    clear: both;
+    width:100%;
+  }
   
   
 
