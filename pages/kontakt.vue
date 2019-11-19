@@ -13,6 +13,7 @@
             <h3>Kom i kontakt och boka</h3>
             <p>070-666 98 71</p>
 
+            <p><a href="https://headlinez.bokadirekt.se" target="_blank">Boka din nästa tid</a></p>
 
             <h3>Hitta till oss</h3>
             <p>

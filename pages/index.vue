@@ -5,7 +5,7 @@
           
           <div class="flex my-2 text-left xs12">
             <h1>Headlinez din frisör i vasastan</h1> 
-            <p class="feed-subheading mt-4"><span>Färgar, slingar, klipper och tonar ditt hår till perfektion, alltid nöjd kund garanti. följ mig på instagram: @jack.sharoian</span> eller <a href="/kontakt">boka din nästa tid</a> nu</p></div>
+            <p class="feed-subheading mt-4"><span>Färgar, slingar, klipper och tonar ditt hår till perfektion, alltid nöjd kund garanti. följ mig på instagram: @jack.sharoian</span> eller <a href="https://headlinez.bokadirekt.se" target="_blank">boka din nästa tid</a> nu</p></div>
 
           
           <div class="flex xs12 align-center hidden-md-and-down"><hr role="separator" aria-orientation="horizontal" class="grey feed-border v-divider theme--light"></div>
@@ -27,7 +27,7 @@
                 <div class="v-responsive v-image grey lighten-2 image-feed">
                   <div class="v-responsive__sizer" style="padding-bottom: 178.571%;"></div>
                   
-                  <video v-if="product.video" width="450" controls :src="product.video"></video>
+                  <video v-if="product.video" width="100%" controls :src="product.video"></video>
                   <div v-else class="v-image__image v-image__image--cover" 
                   :style="{ backgroundImage: `url(${product.image})`, backgroundPosition: 'center center' }"></div>
 
