@@ -12,6 +12,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

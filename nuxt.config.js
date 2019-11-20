@@ -42,7 +42,26 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/google-gtag'
   ],
+  'google-gtag': {
+    id: 'UA-152968988-1',
+    config: {
+      anonymize_ip: true, // anonymize IP 
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+      linker: {
+        domains: ['domain.com','domain.org']
+      }
+    },
+    debug: false, // enable to track in dev mode
+    disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...).
+    // additionalAccounts: [{
+    //   id: 'AW-XXXX-XX', // required if you are adding additional accounts
+    //   config: {
+    //     send_page_view: false // optional configurations
+    //   }
+    // }]
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
