@@ -17,7 +17,7 @@
             
             <h3>Öppetttider</h3>
             <p>Måndag-fredag 10:00-19:00<br>
-                Lördag 10:00-18:00</p>
+                Lördag 10:00-16:00</p>
 
             <h3>Hitta till oss i vasastan</h3>
             <p>
