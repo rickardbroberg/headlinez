@@ -5,7 +5,7 @@
           
           <div class="flex my-2 text-left xs12">
             <h1>Prislista</h1> 
-            <p class="feed-subheading mt-4"><span>Headlinez är en kontantfri salong, det är av säkerhetsskäl som vi beslutat detta. Prislistan visar priser på de vanligaste behandlingarna, för ett mer exakt pris är du välkommen till oss för en kort konsultation som är kostnadsfri.<br><br></span></p>
+            <p class="feed-subheading mt-4"><span>Headlinez är en kontantfri frisörsalong i vasastan, det är av säkerhetsskäl som vi beslutat detta. Prislistan visar priser på de vanligaste behandlingarna, för ett mer exakt pris är du välkommen till oss för en kort konsultation som är kostnadsfri.<br><br></span></p>
 
             <div class="my-5 xs12 align-center hidden-md-and-down"><hr role="separator" aria-orientation="horizontal" class="grey feed-border v-divider theme--light"></div>
             

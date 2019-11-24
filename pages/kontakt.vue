@@ -14,8 +14,12 @@
             <p>070-666 98 71</p>
 
             <p><a href="https://headlinez.bokadirekt.se" target="_blank">Boka din nästa tid</a></p>
+            
+            <h3>Öppetttider</h3>
+            <p>Måndag-fredag 10:00-19:00<br>
+                Lördag 10:00-18:00</p>
 
-            <h3>Hitta till oss</h3>
+            <h3>Hitta till oss i vasastan</h3>
             <p>
               Headlinez<br>
               Karlbergsvägen 13<br>
