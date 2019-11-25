@@ -4,7 +4,7 @@
         <div class="layout row wrap">
           
           <div class="flex my-2 text-left xs12">
-            <h1>Headlinez din frisör i vasastan</h1> 
+            <h1>Headlinez din frisör i Vasastan</h1> 
             <p class="feed-subheading mt-4"><span>Färgar, slingar, klipper och tonar ditt hår till perfektion, alltid nöjd kund garanti. följ mig på instagram: @jack.sharoian</span> eller <a href="https://headlinez.bokadirekt.se" target="_blank">boka din nästa tid</a> nu</p></div>
 
           
@@ -58,6 +58,15 @@ import 'vuetify/dist/vuetify.min.css'
 Vue.use(Vuetify)
 
 export default {
+  head () {
+    return {
+      title: 'Din frisör i Vasastan, Stockholm',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Headlinez är en frisör i Vasastan, Stockholm som hyr in sig på salongen Hårfängan.' },
+        { hid: 'keywords', name: 'keywords', content: 'frisör, vasastan, stockholm, hårklippning, hairdresser' }
+      ]
+    }
+  },
   data: () => ({
     link: '/kontakt',
     products: [

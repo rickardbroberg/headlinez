@@ -120,7 +120,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Headlinez - frisörsalong i vasastan'
+      title: 'Headlinez - din frisör i Vasastan'
     }
   },
   computed: {
@@ -140,7 +140,7 @@ export default {
     return {
       title: 'Headlinez en frisörsalong i vasasataden',
       meta: [
-        { hid: 'description', name: 'description', content: 'Headlinez din frisör i vasastaden' },
+        { hid: 'description', name: 'description', content: 'Headlinez din frisör i vasastan, stockholm' },
         { hid: 'keywords', name: 'keywords', content: 'frisör, vasastaden, stockholm, hårklippning' }
       ]
     }

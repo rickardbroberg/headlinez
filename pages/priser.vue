@@ -115,6 +115,15 @@ import 'vuetify/dist/vuetify.min.css'
 Vue.use(Vuetify)
 
 export default {
+  head () {
+    return {
+      title: 'Priser',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Headlinez prislista för de vanligaste behandlingarna.' },
+        { hid: 'keywords', name: 'keywords', content: 'prislista, färgning, slingor, klippning, hårklippning, tvätt och fön' }
+      ]
+    }
+  },
   data: () => ({
     
     klippningar: [

@@ -49,6 +49,14 @@ import 'vuetify/dist/vuetify.min.css'
 Vue.use(Vuetify)
 
 export default {
+  head () {
+    return {
+      title: 'Kontakt',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Kom i kontakt med Headlinez din frisör i Vasastan, Stockholm.' }
+      ]
+    }
+  },
   data: () => ({
     
     
