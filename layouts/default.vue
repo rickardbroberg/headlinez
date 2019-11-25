@@ -120,7 +120,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Headlinez - frisörsalong i vasastaden'
+      title: 'Headlinez - frisörsalong i vasastan'
     }
   },
   computed: {
