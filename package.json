@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-gtag": "^1.0.4",
+    "@nuxtjs/sitemap": "^2.0.1",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

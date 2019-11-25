@@ -42,7 +42,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/google-gtag'
+    '@nuxtjs/google-gtag',
+    '@nuxtjs/sitemap'
   ],
   'google-gtag': {
     id: 'UA-152968988-1',
@@ -61,6 +62,11 @@ export default {
     //     send_page_view: false // optional configurations
     //   }
     // }]
+  },
+  sitemap: {
+    hostname: 'https://headlinez.se',
+    lastmod: '2019-11-25',
+    gzip: true,
   },
   /*
   ** vuetify module configuration
