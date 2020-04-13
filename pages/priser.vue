@@ -92,6 +92,35 @@
                   </v-simple-table>
                 </v-card>
               </v-col>
+
+              <v-col
+                cols="12"
+                sm="4"
+              >
+                <v-card
+                  class=" ma-3 pa-6"
+                  max-width="400"
+                >
+                  <v-simple-table class="theme--light">
+                    <template v-slot:default>
+                      <thead>
+                        <tr>
+                          <th class="text-left">Balayage</th>
+                          <th class="text-left">Pris</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr v-for="item in balayage" :key="item.name">
+                          <td><span class="name">{{ item.name }}</span> <span v-if="item.detail" class="detail">{{ item.detail }} </span></td>
+                          <td>{{ item.price }}</td>
+                        </tr>
+                      </tbody>
+                    </template>
+                  </v-simple-table>
+                </v-card>
+              </v-col>
+
+              
     
             </v-row>
             
@@ -128,40 +157,44 @@ export default {
     
     klippningar: [
       {
-        name: 'Damklippning, tvätt & styling med värmeverktyg',
-        price: 450,
+        name: 'Damklippning, tvätt & styling med värmeverktyg (60min)',
+        price: 500,
       },
       {
-        name: 'Tvätt & Fön',
+        name: 'Damklippning (student), tvätt & styling med värmeverktyg (60min)',
+        price: 500,
+      },
+      {
+        name: 'Tvätt & Fön (45min)',
+        price: 350,
+      },
+      {
+        name: 'Herrklippning tvätt klipp & styling (30/45min)',
+        price: 400,
+      },
+      {
+        name: 'Klippning + skägg med kniv (60min)',
+        price: 600,
+      },
+      {
+        name: 'Herrklippning (student) tvätt klipp & styling (30min)',
+        price: 350,
+      },
+      {
+        name: 'Skägg med kniv (30min)',
         price: 300,
       },
       {
-        name: 'Herrklippning tvätt klipp & styling',
-        price: 380,
-      },
-      {
-        name: 'Klippning + skägg med kniv',
-        price: 540,
-      },
-      {
-        name: 'Skägg trimning',
-        price: 150,
-      },
-      {
-        name: 'Skägg trimning + kniv',
-        price: 250,
-      },
-      {
-        name: 'Snaggning',
-        price: 180,
+        name: 'Barnklippning',
+        price: 300,
       },
       
     ],
     fargningar: [
         {
           name: 'Bottenfärg',
-          detail: 'Klippning ingår ej',
-          price: 'Från 690',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 800',
         },
         {
           name: 'Färgning -  hela håret',
@@ -169,55 +202,60 @@ export default {
         },
         {
           name: 'Kort',
-          detail: 'Klippning ingår ej',
-          price: 'Från 790',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 1200',
         },
         {
           name: 'Mellan',
-          detail: 'Klippning ingår ej',
-          price: 'Från 890',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 1600',
         },
         {
           name: 'Långt',
-          detail: 'Klippning ingår ej',
-          price: 'Från 1100',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 2000',
         },
         {
           name: 'Med klippning',
-          price: '+300',
+          price: '+350',
         }
       ],
       slingor: [
         {
           name: 'Kort',
-          detail: 'Klippning ingår ej',
-          price: 'Från 700',
-        },
-        {
-          name: 'Mellan',
-          detail: 'Klippning ingår ej',
-          price: 'Från 900',
-        },
-        {
-          name: 'Långt',
-          detail: 'Klippning ingår ej',
+          detail: 'Klippning ingår ej, pris varierar',
           price: 'Från 1200',
         },
         {
+          name: 'Mellan',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 1600',
+        },
+        {
+          name: 'Långt',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 2000',
+        },
+        {
           name: 'Med klippning',
-          price: '+300',
+          price: '+350',
+        }
+      ],
+      balayage: [
+        {
+          name: 'Kort',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 1800',
         },
         {
-          name: 'Extra färgtillägg',
-          price: '300 - 400',
+          name: 'Mellan',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 2300',
         },
         {
-          name: 'Avfärgning',
-          price: 'Konsultation',
-        },
-        {
-          name: 'Olaplex behandling',
-          price: 'Från 699',
+          name: 'Långt',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 2700',
         }
       ],
   }),
