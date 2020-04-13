@@ -90,17 +90,7 @@
                       </tbody>
                     </template>
                   </v-simple-table>
-                </v-card>
-              </v-col>
 
-              <v-col
-                cols="12"
-                sm="4"
-              >
-                <v-card
-                  class=" ma-3 pa-6"
-                  max-width="400"
-                >
                   <v-simple-table class="theme--light">
                     <template v-slot:default>
                       <thead>
@@ -118,9 +108,7 @@
                     </template>
                   </v-simple-table>
                 </v-card>
-              </v-col>
-
-              
+              </v-col>              
     
             </v-row>
             
