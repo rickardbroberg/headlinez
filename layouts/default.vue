@@ -175,8 +175,8 @@ export default {
     font-weight: 400;
   }
   h2{
-    font-size: 38px;
-    margin-bottom: 5%; 
+    font-size: 22px;
+    margin-bottom: 10px; 
     float: none; 
     display: inline-block;  
     padding: 0em; 
@@ -202,8 +202,8 @@ export default {
       font-size: 40px;
     }
     h2{
-      font-size: 36px;
-      margin-bottom: 5%; 
+      font-size: 22px;
+      margin-bottom: 10px; 
       float: none; 
       display: inline-block;  
       padding: 0em; 
