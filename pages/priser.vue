@@ -95,7 +95,7 @@
                     <template v-slot:default>
                       <thead>
                         <tr>
-                          <th class="text-left">Balayage</th>
+                          <th class="text-left">Balayage + klippning</th>
                           <th class="text-left">Pris</th>
                         </tr>
                       </thead>
@@ -146,27 +146,27 @@ export default {
     klippningar: [
       {
         name: 'Damklippning, tvätt & styling med värmeverktyg (60min)',
-        price: 500,
+        price: 520,
       },
       {
         name: 'Damklippning (student), tvätt & styling med värmeverktyg (60min)',
-        price: 500,
+        price: 420,
       },
       {
         name: 'Tvätt & Fön (45min)',
-        price: 350,
-      },
-      {
-        name: 'Herrklippning tvätt klipp & styling (30/45min)',
         price: 400,
       },
       {
+        name: 'Herrklippning tvätt klipp & styling (30/45min)',
+        price: 420,
+      },
+      {
         name: 'Klippning + skägg med kniv (60min)',
-        price: 600,
+        price: 650,
       },
       {
         name: 'Herrklippning (student) tvätt klipp & styling (30min)',
-        price: 350,
+        price: 380,
       },
       {
         name: 'Skägg med kniv (30min)',
@@ -174,7 +174,7 @@ export default {
       },
       {
         name: 'Barnklippning',
-        price: 300,
+        price: 350,
       },
       
     ],
@@ -185,13 +185,23 @@ export default {
           price: 'Från 800',
         },
         {
+          name: 'Bottenfärg + klippning',
+          detail: 'Pris varierar',
+          price: 'Från 1400',
+        },
+        {
+          name: 'Blekning utväxt + nyansering',
+          detail: 'Klippning ingår ej, pris varierar',
+          price: 'Från 1600',
+        },
+        {
           name: 'Färgning -  hela håret',
           price: '-',
         },
         {
           name: 'Kort',
           detail: 'Klippning ingår ej, pris varierar',
-          price: 'Från 1200',
+          price: 'Från 1000',
         },
         {
           name: 'Mellan',
@@ -205,45 +215,64 @@ export default {
         },
         {
           name: 'Med klippning',
-          price: '+350',
+          price: '+400',
         }
       ],
       slingor: [
         {
+          name: 'Slingor + nyansering, klippning ingår ej',
+          price: '-',
+        },
+        {
           name: 'Kort',
-          detail: 'Klippning ingår ej, pris varierar',
-          price: 'Från 1200',
+          detail: 'Pris varierar',
+          price: 'Från 1800',
         },
         {
           name: 'Mellan',
-          detail: 'Klippning ingår ej, pris varierar',
-          price: 'Från 1600',
+          detail: 'Pris varierar',
+          price: 'Från 2200',
         },
         {
           name: 'Långt',
-          detail: 'Klippning ingår ej, pris varierar',
-          price: 'Från 2000',
+          detail: 'Pris varierar',
+          price: 'Från 3000',
         },
         {
-          name: 'Med klippning',
-          price: '+350',
+          name: 'Slingor + nyansering + klippning',
+          price: '-',
+        },
+        {
+          name: 'Kort',
+          detail: 'Pris varierar',
+          price: 'Från 2200',
+        },
+        {
+          name: 'Mellan',
+          detail: 'Pris varierar',
+          price: 'Från 3000',
+        },
+        {
+          name: 'Långt',
+          detail: 'Pris varierar',
+          price: 'Från 3800',
         }
       ],
       balayage: [
         {
           name: 'Kort',
-          detail: 'Klippning ingår ej, pris varierar',
-          price: 'Från 1800',
+          detail: 'Pris varierar',
+          price: 'Från 2500',
         },
         {
           name: 'Mellan',
-          detail: 'Klippning ingår ej, pris varierar',
-          price: 'Från 2300',
+          detail: 'Pris varierar',
+          price: 'Från 3200',
         },
         {
           name: 'Långt',
-          detail: 'Klippning ingår ej, pris varierar',
-          price: 'Från 2700',
+          detail: 'Pris varierar',
+          price: 'Från 3800',
         }
       ],
   }),
