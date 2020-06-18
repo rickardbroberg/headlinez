@@ -4,7 +4,8 @@
         <div class="layout row wrap">
           
           <div class="flex my-2 text-left xs12">
-            <h1>Headlinez din frisör i Vasastan</h1> 
+            <h1>Frisör Vasastan</h1>
+            <h2>Headlinez är din frisör i Vasastan i samma lokal som hårfängan på Karlbergsvägen 13 i Vasastan</h2> 
             <p class="feed-subheading mt-4"><span>Färgar, slingar, klipper och tonar ditt hår till perfektion, alltid nöjd kund garanti. följ mig på instagram: @jack.sharoian</span> eller <a href="https://headlinez.bokadirekt.se" target="_blank">boka din nästa tid</a> nu</p></div>
 
           
