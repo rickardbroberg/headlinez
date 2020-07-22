@@ -195,27 +195,46 @@ export default {
           price: 'Från 1600',
         },
         {
-          name: 'Färgning -  hela håret',
+          name: 'Färgning - hela håret, klippning ingår ej',
           price: '-',
         },
         {
           name: 'Kort',
-          detail: 'Klippning ingår ej, pris varierar',
+          detail: 'Pris varierar',
           price: 'Från 1000',
         },
         {
           name: 'Mellan',
-          detail: 'Klippning ingår ej, pris varierar',
+          detail: 'Pris varierar',
           price: 'Från 1600',
         },
         {
           name: 'Långt',
-          detail: 'Klippning ingår ej, pris varierar',
+          detail: 'Pris varierar',
           price: 'Från 2000',
         },
         {
           name: 'Med klippning',
           price: '+400',
+        },
+        {
+          name: 'Färgning - hela håret + klippning',
+          price: '-',
+        },
+        {
+          name: 'Kort',
+          detail: 'Pris varierar',
+          price: 'Från 1500',
+        },
+        {
+          name: 'Mellan',
+          detail: 'Pris varierar',
+          price: 'Från 2000',
+        },
+        {
+          name: 'Långt',
+          detail: 'Pris varierar',
+          price: 'Från 2500',
         }
       ],
       slingor: [
